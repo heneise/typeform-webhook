@@ -1,0 +1,28 @@
+{
+  "name": "typeform",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "serverless offline start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Heneise Consulting <info@heneise.consulting> (http://heneise.consulting)",
+  "license": "SEE LICENSE IN LICENSE.md",
+  "dependencies": {
+    "axios": "^0.18.0"
+  },
+  "devDependencies": {
+    "serverless-offline": "^3.25.4",
+    "standard": "^11.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/heneise/typeform.git"
+  },
+  "bugs": {
+    "url": "https://github.com/heneise/typeform/issues"
+  },
+  "homepage": "https://github.com/heneise/typeform#readme",
+  "description": ""
+}

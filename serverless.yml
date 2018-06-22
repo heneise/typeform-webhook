@@ -1,0 +1,21 @@
+service: typeform
+
+plugins:
+  - serverless-offline
+
+provider:
+  name: aws
+  runtime: nodejs8.10
+  stage: dev
+  profile: typeform
+
+functions:
+  typeform-webhook:
+    handler: webhooks/typeform.post
+    environment:
+      INFUSION_ACCESS_TOKEN: ${env:INFUSION_ACCESS_TOKEN}
+    events:
+      - http:
+          path: webhooks/typeform
+          method: post
+          cors: true
